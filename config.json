@@ -1,5 +1,5 @@
 {
-    "default_hs_url": "https://chat.example.com",
+    "default_hs_url": "https://chat.recolic.org",
     "default_is_url": "https://vector.im",
     "brand": "Riot",
     "integrations_ui_url": "https://scalar-staging.riot.im/scalar-web/",
@@ -24,7 +24,7 @@
         "feature_sas": "labs",
         "feature_room_breadcrumbs": "labs"
     },
-    "welcomeUserId": "@riot-bot:chat.example.com",
+    "welcomeUserId": "@riot-bot:chat.recolic.org",
     "piwik": {
         "url": "https://piwik.riot.im/",
         "siteId": 1,
@@ -32,7 +32,7 @@
     },
     "roomDirectory": {
         "servers": [
-            "chat.example.com"
+            "chat.recolic.org"
         ]
     },
     "enable_presence_by_hs_url": {

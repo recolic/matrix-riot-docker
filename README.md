@@ -1,6 +1,33 @@
 # matrix-riot-docker
 an all-in-one docker compose setup for a personal riot client and matrix server
 
+# RECOLIC NOTICE
+
+```
+###################### BEGIN generate synapse config
+vim docker-compose.yml
+# Edit docker-compose.yml, Uncomment `entrypoint: ["/start.py", "migrate_config"]`
+
+docker-compose up -d ; docker-compose down
+###################### END
+
+###################### BEGIN fix locale
+docker-compose up -d
+docker exec -ti matrixriotdocker_db_1 psql -U matrix
+
+# Then run the following sql
+CREATE DATABASE synapse
+ ENCODING 'UTF8'
+ LC_COLLATE='C'
+ LC_CTYPE='C'
+ template=template0
+ OWNER matrix;
+# SQL end
+
+docker-compose down ; docker-compose up -d
+###################### END
+```
+
 usage
 =====
 Update nginx.conf and nginx.init.conf file by replacing example.com references with your domain
