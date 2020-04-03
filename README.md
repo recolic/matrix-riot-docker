@@ -9,6 +9,7 @@ vim docker-compose.yml
 # Edit docker-compose.yml, Uncomment `entrypoint: ["/start.py", "migrate_config"]`
 
 docker-compose up -d ; docker-compose down
+# Edit docker-compose.yml, Comment `entrypoint: ["/start.py", "migrate_config"]` again
 ###################### END
 
 ###################### BEGIN fix locale
