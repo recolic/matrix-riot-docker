@@ -25,7 +25,7 @@ services:
       - POSTGRES_USER=matrix
       - POSTGRES_PASSWORD=G7oxxxxxxxxxxxxxV3C
       - SYNAPSE_NO_TLS=1
-      - SYNAPSE_MAX_UPLOAD_SIZE=100M
+      - SYNAPSE_MAX_UPLOAD_SIZE=300M
     ports:
       - 3002:8008
     volumes:
