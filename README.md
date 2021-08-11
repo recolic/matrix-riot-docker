@@ -56,7 +56,7 @@ The following steps are only necessary for first-time setup.
 
 ```
 ###################### BEGIN generate synapse config
-vim .env
+vim .env ; vim config.json
 # Set domain and password
 
 vim docker-compose.yml
