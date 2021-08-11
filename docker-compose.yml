@@ -37,7 +37,7 @@ services:
     # entrypoint: ["/start.py", "migrate_config"]
 
   db:
-    image: docker.io/postgres:alpine  # 10-alpine
+    image: docker.io/postgres:12-alpine  # 10-alpine
     restart: unless-stopped
     ports:
       - 5432:5432
