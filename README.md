@@ -62,7 +62,7 @@ vim .env
 vim docker-compose.yml
 # Edit docker-compose.yml, Uncomment `entrypoint: ["/start.py", "migrate_config"]`
 
-docker-compose up -d ; docker-compose down
+docker-compose up -d ; sleep 15 ; docker-compose down
 
 vim docker-compose.yml
 # Edit docker-compose.yml, Comment `entrypoint: ["/start.py", "migrate_config"]` again
