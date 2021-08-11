@@ -113,7 +113,7 @@ Then the matrix.org federationtester knows that, he should connect `https://chat
 
 --------
 
-Recolic guide: END OF CONTENT
+## Recolic guide: END OF CONTENT
 
 
 usage
