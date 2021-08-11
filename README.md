@@ -56,10 +56,14 @@ The following steps are only necessary for first-time setup.
 
 ```
 ###################### BEGIN generate synapse config
+vim .env
+# Set domain and password
+
 vim docker-compose.yml
 # Edit docker-compose.yml, Uncomment `entrypoint: ["/start.py", "migrate_config"]`
 
 docker-compose up -d ; docker-compose down
+
 vim docker-compose.yml
 # Edit docker-compose.yml, Comment `entrypoint: ["/start.py", "migrate_config"]` again
 ###################### END
