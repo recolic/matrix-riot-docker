@@ -101,15 +101,15 @@ listeners:
 
 Then expose 8448:8448 in docker-compose.yml.
 
-2. **RECOMMENDED** Since most of us is using nginx proxy, we should set DNS record
+2. **RECOMMENDED** Since most of us is using nginx proxy, and we may want to use port 443 instead of hardcoded port 8448. we should set DNS record
 
 ```
-# SRV doesn't allow CNAME...
-chat.recolic.org A 34.80.xxx.xxx
-_matrix._tcp.chat.recolic.org SRV   xx xx 443 chat.recolic.org
+# SRV doesn't allow CNAME... SRV points to target IP address, instead of domain. 
+chat.recolic.net CNAME base.us12.recolic.net
+_matrix._tcp.chat.recolic.net SRV   xx xx 443 base.us12.recolic.net
 ```
 
-Then the matrix.org federationtester knows that, he should connect `https://chat.recolic.org:443`, rather than `https://34.80.xxx.xxx:8448`.
+Then the matrix.org federationtester knows that, he should connect `https://chat.recolic.net:443`, instead of `https://34.80.xxx.xxx:8448`.
 
 --------
 
