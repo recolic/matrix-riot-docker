@@ -52,6 +52,8 @@ an all-in-one docker compose setup for a personal riot client and matrix server
 
 ## 2 Setup Matrix-Backend and Riot-Web frontend.
 
+The following steps are only necessary for first-time setup. 
+
 ```
 ###################### BEGIN generate synapse config
 vim docker-compose.yml
@@ -109,7 +111,9 @@ _matrix._tcp.chat.recolic.org SRV   xx xx 443 chat.recolic.org
 
 Then the matrix.org federationtester knows that, he should connect `https://chat.recolic.org:443`, rather than `https://34.80.xxx.xxx:8448`.
 
+--------
 
+Recolic guide: END OF CONTENT
 
 
 usage
