@@ -8,6 +8,7 @@ an all-in-one docker compose setup for a personal riot client and matrix server
 ```
     server {
         listen       443 ssl http2;
+        listen       8448 ssl http2;
         server_name chat.recolic.net chat.recolic.org;
         server_tokens off;
         client_max_body_size 8192M;
@@ -85,6 +86,7 @@ docker-compose down ; docker-compose up -d
 ###################### END
 ```
 
+<!-- This section should not be required anymore. nginx is listening both 443 and 8448 now! 
 ## 3 Further bugfix
 
 > https://github.com/vector-im/riot-web/issues/3329
@@ -114,6 +116,7 @@ _matrix._tcp.chat.recolic.net SRV   xx xx 443 base.us12.recolic.net
 ```
 
 Then the matrix.org federationtester knows that, he should connect `https://chat.recolic.net:443`, instead of `https://34.80.xxx.xxx:8448`.
+-->
 
 --------
 
