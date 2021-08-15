@@ -86,8 +86,11 @@ docker-compose down ; docker-compose up -d
 ###################### END
 ```
 
-<!-- This section should not be required anymore. nginx is listening both 443 and 8448 now! 
 ## 3 Further bugfix
+
+If you're still experiencing some issue about integration server, please see the hidden content in this markdown. The issue should have been fixed in latest version of this guide. 
+
+<!-- This section should not be required anymore. nginx is listening both 443 and 8448 now! 
 
 > https://github.com/vector-im/riot-web/issues/3329
 
